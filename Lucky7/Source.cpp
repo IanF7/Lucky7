@@ -16,7 +16,7 @@ void f7();
 
 int main()
 {
-	f1();
+	f2();
 	return 0;
 }
 //Write program that reads 5 integers and prints the largest and smallest of the group
@@ -45,7 +45,12 @@ void f1()
 
 void f2()
 {
-
+	int sum = 0;
+	for (int i = 1; i <= 50; i++)
+	{
+		sum += i * 7;
+	}
+	cout << "sum = " << sum << endl;
 }
 
 void f3()
