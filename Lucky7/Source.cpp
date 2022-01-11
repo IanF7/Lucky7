@@ -16,7 +16,7 @@ void f7();
 
 int main()
 {
-	f3();
+	f4();
 	return 0;
 }
 //Reads 5 integers and prints the largest and smallest of the group
@@ -62,10 +62,30 @@ void f3()
 	}
 	cout << factorial << endl;
 }
-
+//program that reads in a string and determine if its a palindrome
 void f4()
 {
-
+	string test = "mom";
+	int countdown = test.length() - 1;
+	int countup = 0;
+	bool pal = true;
+	while (pal && countup < countdown)
+	{
+		if (test[countup] != test[countdown])
+		{
+			pal = false;
+		}
+		countup++;
+		countdown--;
+	}
+	if(pal)
+	{ 
+		cout << test << " is a palindrome" << endl;
+	}
+	else
+	{
+		cout << test << " isn't a palindrome" << endl;
+	}
 }
 
 void f5()
