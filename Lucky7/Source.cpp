@@ -16,10 +16,10 @@ void f7();
 
 int main()
 {
-	f2();
+	f3();
 	return 0;
 }
-//Write program that reads 5 integers and prints the largest and smallest of the group
+//Reads 5 integers and prints the largest and smallest of the group
 void f1()
 {
 	int curr, small, large;
@@ -42,7 +42,7 @@ void f1()
 	cout << "Largest = " << large << " smallest = " << small << endl;
 	
 }
-
+//calculates and prints sum of first 50 integers that are multiples of 7
 void f2()
 {
 	int sum = 0;
@@ -52,10 +52,15 @@ void f2()
 	}
 	cout << "sum = " << sum << endl;
 }
-
+//prints out fist 10 terms of a factorial
 void f3()
 {
-
+	int factorial = 1;
+	for (int i = 2; i <= 10; i++)
+	{
+		factorial = i * factorial;
+	}
+	cout << factorial << endl;
 }
 
 void f4()
